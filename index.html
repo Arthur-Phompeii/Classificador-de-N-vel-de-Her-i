@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio - Classificador de Nível de Herói </title>
+
+    <link rel="shortcut icon" type="image/jpg" href="./src/images/favicon.ico">
+    <link rel="stylesheet" href="./src/CSS/styles.css">
+</head>
+<body>
+    <header>
+        <div>
+        <h1>Classificador de Nível de Herói</h1>
+        <p>by Arthur-Phompeii</p>
+        </div>
+    </header>
+    <main>
+        <div>
+            <section class="sectionName">
+                <div>
+                    <h2>Escolha o Nome do Herói</h2>
+                    <input type="text" id="heroNameInput" placeholder="Nome do Herói">
+                    <!-- <p>Você escolheu: <span class="heroNameText"></span></p> -->
+                </div>
+                <div class="ranking">
+                    <h2>O Herói <span id="heroNameText"></span> está no nível 
+                    </h2>
+                    <p><span id="heroXpClass"></span></p>
+                </div>
+            </section>
+            <div>
+                <img src="./src/images/pngwing.com.png">
+                <div id="sombra"></div>
+            </div>
+        </div>
+        <section class="sectionLevel">
+            <p>Nível de Herói: <span id="rangeValue">0</span></p>
+            <div>
+                <label for="rangeInput">Escolha o nível do herói:</label>
+                <input type="range" id="rangeInput" min="0" max="12000" step="1" value="0">
+            </div>
+        </section>
+    </main>
+    <script src="./src/scripts/index.js"></script>
+</body>
+</html>
